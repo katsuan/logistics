@@ -10,6 +10,14 @@ const routes = [
         }
     },
     {
+        path: '/test',
+        name: 'test',
+        component: async () => {
+            const test = await import('@/pages/Test.vue');
+            return test;
+        }
+    },
+    {
         path: '/login',
         name: 'login',
         component: async () => {
